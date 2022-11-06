@@ -1,0 +1,210 @@
+.bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  padding: 50px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #f8f8ff;
+}
+
+.area-wrapper {
+  display: flex;
+  max-width: 1600px;
+  min-width: 1280px;
+  margin: 0 auto;
+  height: 800px;
+  justify-content: space-between;
+}
+
+.text-area {
+  position: relative;
+  width: 500px;
+}
+
+.day-area {
+  height: 300px;
+}
+
+#clock {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+}
+
+#clock::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 2px;
+  width: 20px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #f8f8ff;
+}
+
+#weather {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#weather p {
+  margin: 5px 0;
+}
+
+#weather p:last-child {
+  font-size: 18px;
+}
+
+#quote {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+#quote p {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+#quote p:last-child {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input[type="text"]:focus-visible {
+  outline: 2px solid #f8f8ff;
+  color: white;
+}
+input::placeholder {
+  color: #f8f8ff;
+}
+
+#login-form {
+  position: relative;
+  height: 161px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#login-form input {
+  width: 500px;
+  height: 200px;
+  border: 0;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+#login-form input::placeholder {
+  color: #f8f8ff;
+}
+
+#login-form button {
+  position: absolute;
+  left: 0.5px;
+  bottom: -40px;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding-left: 5px;
+  font-weight: 900;
+  font-size: 16px;
+  color: #f8f8ff;
+}
+
+input[type="text"]:focus-visible {
+  outline: 2px solid #f8f8ff;
+  color: white;
+}
+input::placeholder {
+  color: #f8f8ff;
+}
+
+#greeting {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.todo-area {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.todo-area {
+  position: relative;
+  margin-top: 130px;
+}
+#todo-form input {
+  width: 500px;
+  height: 40px;
+  padding-left: 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#todo-list {
+  position: relative;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#todo-list::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 10px;
+  width: 480px;
+  height: 1px;
+  background-color: #f8f8ff;
+}
+
+#todo-list li {
+  padding: 5px 0 5px 20px;
+}
+
+#todo-list button {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: #f8f8ff;
+}
+
+.semi-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.git-logo-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.git-logo {
+  fill: #f8f8ff;
+}
