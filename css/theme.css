@@ -1,3 +1,5 @@
+/* 배경이미지 */
+
 .bgimg {
   position: absolute;
   top: 0;
@@ -6,30 +8,17 @@
   z-index: -1;
 }
 
+/* 바디 콘테이너 */
+
 .container {
   position: relative;
-  display: flex;
   padding: 50px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  min-width: 650px;
   color: #f8f8ff;
 }
 
-.area-wrapper {
-  display: flex;
-  max-width: 1600px;
-  min-width: 1280px;
-  margin: 0 auto;
-  height: 800px;
-  justify-content: space-between;
-}
-
-.text-area {
-  position: relative;
-  width: 500px;
-}
+/* 헤더 */
 
 .day-area {
   height: 300px;
@@ -45,8 +34,8 @@
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 2px;
+  top: 50px;
+  left: 52px;
   width: 20px;
   height: 3px;
   border-radius: 1px;
@@ -83,27 +72,42 @@
   font-weight: 700;
 }
 
-input[type="text"]:focus-visible {
-  outline: none;
-  color: #f8f8ff;
+.main-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-input::placeholder {
-  color: #f8f8ff;
-  font-weight: 900;
-  overflow: visible;
+
+/* 로그인 */
+
+.text-area {
+  height: 200px;
+}
+
+.welcome-area {
+  position: relative;
+  width: 550px;
+  margin: auto 0;
+}
+
+.greeting-area {
+  width: 550px;
+  margin-bottom: 30px;
 }
 
 #login-form {
-  position: relative;
-  height: 161px;
   font-size: 50px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin: 0 auto;
 }
 
 #login-form input {
+  display: block;
   width: 500px;
-  height: 200px;
+  height: 160px;
   border: 0;
   border-radius: 3px;
   background-color: transparent;
@@ -114,16 +118,15 @@ input::placeholder {
 }
 
 #login-form button {
-  position: absolute;
-  left: 0.5px;
-  bottom: -40px;
+  display: block;
   width: 100px;
   height: 35px;
   background-color: transparent;
   border: 1.5px solid #f8f8ff;
+  border-radius: 3px;
   text-align: left;
   padding-left: 10px;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 16px;
   color: #f8f8ff;
 }
@@ -133,21 +136,29 @@ input::placeholder {
   font-weight: bold;
 }
 
-.todo-area {
-  font-weight: 400;
-  font-size: 16px;
+#cheering {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 80px;
 }
+
+/* to do */
 
 .todo-area {
   position: relative;
-  margin-top: 130px;
+  width: 550px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 120px;
 }
+
 #todo-form input {
-  width: 500px;
+  width: 550px;
   height: 40px;
   padding-left: 20px;
   border: 0;
-  border-radius: 3px;
+  margin: 0 auto;
+  border-radius: 3px 3px 0 0;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -157,21 +168,27 @@ input::placeholder {
   font-weight: 400;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 3px 3px;
 }
 
-#todo-list::before {
-  content: "";
-  position: absolute;
+#todo-list {
   display: block;
-  top: 0;
-  left: 10px;
-  width: 480px;
-  height: 1px;
-  background-color: #f8f8ff;
+  margin: 0 auto;
 }
 
 #todo-list li {
   padding: 5px 0 5px 20px;
+}
+
+#todo-list li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: 10px;
+  width: 530px;
+  height: 1px;
+  background-color: #f8f8ff;
 }
 
 #todo-list button {
@@ -186,19 +203,36 @@ input::placeholder {
   color: #f8f8ff;
 }
 
-.semi-footer {
-  position: absolute;
-  right: 0;
+/* 푸터 */
+
+footer {
+  position: fixed;
+  left: 0;
   bottom: 0;
-  font-size: 16px;
-  font-weight: 100;
+  width: 100%;
+  min-width: 650px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
 }
 
 .git-logo-footer {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
+  left: 50px;
+  width: 27px;
+  height: 27px;
+  vertical-align: middle;
 }
 
 .git-logo {
   fill: #f8f8ff;
+}
+
+.luv-footer {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-size: 16px;
+  font-weight: 100;
 }

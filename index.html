@@ -9,26 +9,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="area-wrapper">
-        <div class="text-area">
-          <div class="day-area">
-            <h2 id="clock">00:00</h2>
-            <div id="weather">
-              <p></p>
-              <p></p>
-            </div>
-            <div id="quote">
-              <p></p>
-              <p></p>
-            </div>
+      <!-- 헤더 영역 -->
+      <header>
+        <div class="day-area">
+          <h2 id="clock">00:00</h2>
+          <div id="weather">
+            <p></p>
+            <p></p>
           </div>
-          <div class="greeting-area">
+          <div id="quote">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </header>
+      <!-- 메인영역 -->
+      <div class="main-wrapper">
+        <!-- 로그인 영역 -->
+        <div class="text-area">
+          <div class="welcome-area">
             <form id="login-form" class="hidden">
               <input required maxlength="15" type="text" placeholder="What's your name?" />
               <button>Log In</button>
             </form>
             <h1 id="greeting" class="hidden"></h1>
+            <h2 id="cheering" class="hidden"></h2>
           </div>
+        </div>
+        <!-- Todo 영역 -->
+        <div class="todo-area">
+          <form id="todo-form">
+            <input type="text" placeholder=" Write a To Do and Press Enter. " required />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+        <!-- 푸터영역 -->
+        <footer>
           <div class="git-logo-footer">
             <a href="https://github.com/5kdk" aria-label="Homepage" class="git-logo" title="GitHub">
               <svg
@@ -46,16 +62,10 @@
               </svg>
             </a>
           </div>
-        </div>
-        <div class="todo-area">
-          <form id="todo-form" action="">
-            <input type="text" placeholder=" Write a To Do and Press Enter. " required />
-          </form>
-          <ul id="todo-list"></ul>
-          <div class="semi-footer">
+          <div class="luv-footer">
             <p>Nomadcoder the luv🧡</p>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
     <script src="./js/greeting.js"></script>
