@@ -11,9 +11,12 @@
 /* 바디 콘테이너 */
 
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   padding: 50px;
-  margin: 0 auto;
+  height: 100vh;
   min-width: 650px;
   color: #f8f8ff;
 }
@@ -21,7 +24,10 @@
 /* 헤더 */
 
 .day-area {
-  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 180px;
 }
 
 #clock {
@@ -82,10 +88,6 @@
 }
 
 /* 로그인 */
-
-.text-area {
-  height: 200px;
-}
 
 .welcome-area {
   position: relative;
