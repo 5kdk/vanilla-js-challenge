@@ -8,7 +8,6 @@
   z-index: -1;
 }
 
-
 /* 바디 콘테이너 */
 
 .container {
@@ -25,15 +24,13 @@
 
 /* 헤더 */
 
-header {
-  height: 300px;
-}
 .day-area {
   position: relative;
+  min-height: 240px;
 }
 
 #clock {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   margin: 10px 0 20px 0;
 }
@@ -51,7 +48,7 @@ header {
 }
 
 #weather {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -60,12 +57,8 @@ header {
   margin: 5px 0;
 }
 
-#weather p:last-child {
-  font-size: 18px;
-}
-
 #quote {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
 }
 
@@ -82,7 +75,7 @@ header {
 
 .main-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 1280px;
   min-height: 500px;
@@ -217,11 +210,8 @@ footer {
 
 .footer-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  bottom: 0;
-  width: 100%;
-  left: 0;
+  align-items:center;
+  justify-content:flex-end;
   height: 50px;
 }
 
@@ -235,6 +225,7 @@ footer {
 }
 
 .luv-footer {
+  margin-right: 20px;
   font-size: 16px;
   font-weight: 100;
 }
