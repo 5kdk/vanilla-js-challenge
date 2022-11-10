@@ -8,6 +8,7 @@
   z-index: -1;
 }
 
+
 /* 바디 콘테이너 */
 
 .container {
@@ -15,19 +16,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 1000px;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   padding: 50px;
-  height: 100vh;
   min-width: 650px;
   color: #f8f8ff;
 }
 
 /* 헤더 */
 
+header {
+  height: 200px;
+}
 .day-area {
   position: relative;
-  height: 180px;
 }
 
 #clock {
@@ -80,9 +82,10 @@
 
 .main-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   max-width: 1280px;
+  min-height: 500px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
